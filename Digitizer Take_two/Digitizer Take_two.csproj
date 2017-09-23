@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DA3BB9C1-6030-472D-BACE-9EC7E57AA103}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Digitizer_Take_two</RootNamespace>
+    <AssemblyName>Digitizer Take_two</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Digitizer_Take_two.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.6.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="adduser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adduser.Designer.cs">
+      <DependentUpon>adduser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="administrator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="administrator.Designer.cs">
+      <DependentUpon>administrator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminProfile.Designer.cs">
+      <DependentUpon>adminProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="changepass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="changepass.Designer.cs">
+      <DependentUpon>changepass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chartmngmnt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chartmngmnt.Designer.cs">
+      <DependentUpon>chartmngmnt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chart_edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chart_edit.Designer.cs">
+      <DependentUpon>chart_edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="con_db.cs" />
+    <Compile Include="Coordinates.cs" />
+    <Compile Include="myprofile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="myprofile.Designer.cs">
+      <DependentUpon>myprofile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Station_Management.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Station_Management.Designer.cs">
+      <DependentUpon>Station_Management.cs</DependentUpon>
+    </Compile>
+    <Compile Include="upload.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="upload.Designer.cs">
+      <DependentUpon>upload.cs</DependentUpon>
+    </Compile>
+    <Compile Include="globals.cs" />
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="quries.cs" />
+    <Compile Include="Station Check In.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Station Check In.Designer.cs">
+      <DependentUpon>Station Check In.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StationParameters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StationParameters.Designer.cs">
+      <DependentUpon>StationParameters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User manager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User manager.Designer.cs">
+      <DependentUpon>User manager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="useredit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="useredit.Designer.cs">
+      <DependentUpon>useredit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userwelcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userwelcome.Designer.cs">
+      <DependentUpon>userwelcome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="verifyplot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="verifyplot.Designer.cs">
+      <DependentUpon>verifyplot.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="adduser.resx">
+      <DependentUpon>adduser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="administrator.resx">
+      <DependentUpon>administrator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminProfile.resx">
+      <DependentUpon>adminProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="changepass.resx">
+      <DependentUpon>changepass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chartmngmnt.resx">
+      <DependentUpon>chartmngmnt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chart_edit.resx">
+      <DependentUpon>chart_edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="myprofile.resx">
+      <DependentUpon>myprofile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Station_Management.resx">
+      <DependentUpon>Station_Management.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="upload.resx">
+      <DependentUpon>upload.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Station Check In.resx">
+      <DependentUpon>Station Check In.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StationParameters.resx">
+      <DependentUpon>StationParameters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User manager.resx">
+      <DependentUpon>User manager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="useredit.resx">
+      <DependentUpon>useredit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userwelcome.resx">
+      <DependentUpon>userwelcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="verifyplot.resx">
+      <DependentUpon>verifyplot.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images%282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images%283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images%284%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\untitled%282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\untitled.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
